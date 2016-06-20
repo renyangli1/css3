@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8" />
+    <title>animation-timing-function_CSS参考手册_web前端开发参考手册系列</title>
+    <meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+    <style>
+    h1{
+        font-size: 16px;
+    }
+    div{
+        width:60px;
+        height: 60px;
+        margin:200px 0 0 50px;
+        padding: 10px;
+        border-radius: 41px;
+        box-shadow: 0 0 10px rgba(204,102,0,.8);
+        background: #F6D66E;
+        background: -moz-linear-gradient(top,#fff,#F6D66E);
+        background: -webkit-linear-gradient(top,#fff,#F6D66E);
+        background: linear-gradient(top,#fff,#F6D66E);
+        -webkit-animation: animations 4s linear infinite;
+        -moz-animation: animations 4s linear infinite;
+        animation: animations 4s linear infinite;
+    }
+    @-webkit-keyframes animations{
+        0%{
+            -webkit-transform: translate(0,0);
+        }
+        12%{
+            -webkit-transform: translate(80px,-25px);
+        }
+        /*25%{
+            -webkit-animation: translate(200px, -50px);
+        }*/
+    }
+    </style>
+</head>
+
+<body>
+    <h1>线性运动的太阳（您还可以定义其它的动画过渡类型，如ease-in,ease-out等）：</h1>
+    <div></div>
+    <p></p>
+</body>
+
+</html>
